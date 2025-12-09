@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useWishlist } from '../../Context/WishlistContext';
-import '../Product/products.css';
+import './products.css';
 
 // Import your images
 import pr11 from '../../assets/img/images/Homes/1.3.jpg';

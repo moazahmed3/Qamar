@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { useTranslation } from "react-i18next";
-import './SignIn.css';
+import './signIn.css';
 
 const SignIn = () => {
   const [formData, setFormData] = useState({

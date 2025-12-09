@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useWishlist } from '../../Context/WishlistContext';
-import './ProductDetails.css';
+import './productDetails.css';
 
 // Local static assets
 import pr11 from '../../assets/img/images/Homes/1.2.jpg';

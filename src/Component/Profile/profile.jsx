@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 // import { useTranslation } from "react-i18next";
-import "./Profile.css";
+import "./profile.css";
 
 const Profile = () => {
   const profileRef = useRef(null);

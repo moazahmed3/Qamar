@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
 import { useWishlist } from "../../Context/WishlistContext";
-import "../Navbar/nav.css";
+import "./Nav.css";
 
 export default function Nav() {
   const { t } = useTranslation();
