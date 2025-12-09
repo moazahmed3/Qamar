@@ -1,0 +1,329 @@
+/* src/Component/Collection/Collection.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --accent-brown: #6b4f3b;
+  --muted: #7a6a5b;
+  --benefit-bg: #5a2f1f;
+  --white: #ffffff;
+  --dark: #222;
+}
+
+/* Section */
+.collection-section {
+  padding: 40px 26px 40px;
+  background: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.collection-header {
+  text-align: center;
+  margin: 20px 0 20px 20px;
+}
+
+.collection-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 30px;
+  margin: 2px;
+}
+
+.collection-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 9px;
+  width: 140px;
+  height: 2px;
+  background: #444;
+}
+
+.collection-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #444;
+}
+
+/* Collection Cards */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 100px;
+}
+
+.collection-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+.collection-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.collection-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
+}
+
+.collection-info {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.collection-name {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.collection-price {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.collection-card:hover .collection-img {
+  transform: scale(1.05);
+}
+
+/* Sale Banner */
+.collection-sale {
+  margin-top: 20px;
+  padding: 60px 60px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,
+    #f7e9dd 0%, #f3d9c7 25%, #ecd3c4 50%, #f5e6d8 75%, #f8efe6 100%
+  );
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.sale-text {
+  max-width: 700px;
+  margin-right: 110px;
+  color: var(--accent-brown);
+  text-align: center;
+}
+
+.sale-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sale-date {
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.sale-line {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.sale-line span {
+  font-weight: bold;
+}
+
+.sale-foot {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.sale-circle-wrap {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -70px;
+  bottom: -50px;
+}
+
+.sale-circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Benefits */
+.benefits-section {
+  padding: 32px 0 40px;
+  background: var(--white);
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+
+}
+
+.benefit-card {
+  background: var(--benefit-bg);
+  color: var(--white);
+  min-width: 185px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+ 
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.123);
+}
+
+.benefit-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefit-icon {
+  font-size: 22px;
+}
+
+.benefit-title {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Arrow Button */
+.benefit-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.095);
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .15s;
+  color: #f1eae4;
+}
+
+.benefit-arrow:hover {
+  transform: translateX(4px);
+  background: rgba(255,255,255,0.18);
+}
+
+/* Subscribe Box */
+.subscribe-box {
+  text-align: center;
+}
+
+.subscribe-title {
+  margin-top: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.subscribe-text {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 19px;
+}
+
+.subscribe-form {
+  max-width: 620px;
+  margin: auto;
+  display: flex;
+  border-radius: 999px;
+  background: var(--white);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.subscribe-input {
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-btn {
+  padding: 12px 32px;
+  background: var(--benefit-bg);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  opacity: .9;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-sale {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sale-circle-wrap {
+    position: static;
+    width: 220px;
+    height: 220px;
+    margin-top: 16px;
+  }
+
+  .sale-text {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .subscribe-input,
+  .subscribe-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

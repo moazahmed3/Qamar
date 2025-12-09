@@ -1,0 +1,154 @@
+/* ContactUs.css */
+.contact-us-page {
+  direction: ltr;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-title {
+  text-align: center;
+  
+  color: #2c3e50;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.contact-us-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+}
+
+.contact-us-item {
+  background: #f8f9fa;
+  padding: 35px;
+  border-radius: 15px;
+  border-right: 6px solid #76583b;
+  transition: all 0.3s ease;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 calc(50% - 40px); 
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.contact-us-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us-label {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-us-value {
+  color: #555;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.contact-us-social {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.contact-us-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-us-icon:hover {
+  transform: scale(1.15);
+}
+
+.contact-us-icon.whatsapp {
+  background: #25D366;
+}
+
+.contact-us-icon.facebook {
+  background: #1877F2;
+}
+
+.contact-us-icon.linkedin {
+  background: #0077B5;
+}
+
+
+@media (max-width: 768px) {
+  .contact-us-page {
+    padding: 30px 20px;
+  }
+  
+  .contact-us-container {
+    padding: 30px;
+    margin: 10px;
+    max-width: 100%;
+  }
+  
+  .contact-us-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-us-grid {
+    gap: 30px;
+  }
+  
+  .contact-us-item {
+    flex: 0 0 100%; 
+    min-width: auto;
+    padding: 25px;
+    min-height: 120px;
+  }
+  
+  .contact-us-label {
+    font-size: 1.2rem;
+  }
+  
+  .contact-us-value {
+    font-size: 1.1rem;
+  }
+  
+  .contact-us-social {
+    gap: 15px;
+  }
+  
+  .contact-us-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
