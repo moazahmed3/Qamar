@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "../Navbar/nav.css";
+import "./Nav.css";
 
 export default function LanguageButton() {
   const { i18n } = useTranslation();
