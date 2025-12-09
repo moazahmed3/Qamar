@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import LanguageButton from "./LanguageButton";
 import { useWishlist } from "../../Context/WishlistContext";
 import "./Nav.css";
-
+import imgNav from "../../assets/logo.jpg"
 export default function Nav() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -137,7 +137,7 @@ export default function Nav() {
             {/* Left */}
 
             <Link to="/" className="navbar-brand" >
-              <img src="../src/assets/logo.jpg" alt="logo" className="img-fluid rounded-circle" />
+              <img src={imgNav} alt="logo" className="img-fluid rounded-circle" />
             </Link>
 
             <button
